@@ -13,6 +13,12 @@
 		ADF0DB9A1C1D326700420CA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF0DB991C1D326700420CA0 /* Assets.xcassets */; };
 		ADF0DB9D1C1D326700420CA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF0DB9B1C1D326700420CA0 /* LaunchScreen.storyboard */; };
 		ADF0DBA81C1D326700420CA0 /* FKValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DBA71C1D326700420CA0 /* FKValidatorTests.swift */; };
+		ADF0DBB41C1D32B100420CA0 /* FKValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DBB31C1D32B100420CA0 /* FKValidator.swift */; };
+		ADF0DBB71C1D336000420CA0 /* FKValidatorRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DBB61C1D336000420CA0 /* FKValidatorRule.swift */; };
+		ADF0DBB91C1D338500420CA0 /* FKValidatorRuleRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DBB81C1D338500420CA0 /* FKValidatorRuleRequired.swift */; };
+		ADF0DBBB1C1D33AB00420CA0 /* FKValidatorRuleExactLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DBBA1C1D33AB00420CA0 /* FKValidatorRuleExactLength.swift */; };
+		ADF0DBBD1C1D33BF00420CA0 /* FKValidatorRuleMinLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DBBC1C1D33BF00420CA0 /* FKValidatorRuleMinLength.swift */; };
+		ADF0DBBF1C1D33D700420CA0 /* FKValidatorRuleMaxLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DBBE1C1D33D700420CA0 /* FKValidatorRuleMaxLength.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		ADF0DBA31C1D326700420CA0 /* FKValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FKValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF0DBA71C1D326700420CA0 /* FKValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FKValidatorTests.swift; sourceTree = "<group>"; };
 		ADF0DBA91C1D326700420CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF0DBB31C1D32B100420CA0 /* FKValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKValidator.swift; sourceTree = "<group>"; };
+		ADF0DBB61C1D336000420CA0 /* FKValidatorRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKValidatorRule.swift; sourceTree = "<group>"; };
+		ADF0DBB81C1D338500420CA0 /* FKValidatorRuleRequired.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKValidatorRuleRequired.swift; sourceTree = "<group>"; };
+		ADF0DBBA1C1D33AB00420CA0 /* FKValidatorRuleExactLength.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKValidatorRuleExactLength.swift; sourceTree = "<group>"; };
+		ADF0DBBC1C1D33BF00420CA0 /* FKValidatorRuleMinLength.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKValidatorRuleMinLength.swift; sourceTree = "<group>"; };
+		ADF0DBBE1C1D33D700420CA0 /* FKValidatorRuleMaxLength.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKValidatorRuleMaxLength.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,7 @@
 		ADF0DB861C1D326500420CA0 = {
 			isa = PBXGroup;
 			children = (
+				ADF0DBB21C1D328A00420CA0 /* Classes */,
 				ADF0DB911C1D326600420CA0 /* FKValidator */,
 				ADF0DBA61C1D326700420CA0 /* FKValidatorTests */,
 				ADF0DB901C1D326600420CA0 /* Products */,
@@ -94,6 +107,27 @@
 				ADF0DBA91C1D326700420CA0 /* Info.plist */,
 			);
 			path = FKValidatorTests;
+			sourceTree = "<group>";
+		};
+		ADF0DBB21C1D328A00420CA0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ADF0DBB51C1D332F00420CA0 /* Rules */,
+				ADF0DBB31C1D32B100420CA0 /* FKValidator.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		ADF0DBB51C1D332F00420CA0 /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				ADF0DBB61C1D336000420CA0 /* FKValidatorRule.swift */,
+				ADF0DBB81C1D338500420CA0 /* FKValidatorRuleRequired.swift */,
+				ADF0DBBA1C1D33AB00420CA0 /* FKValidatorRuleExactLength.swift */,
+				ADF0DBBC1C1D33BF00420CA0 /* FKValidatorRuleMinLength.swift */,
+				ADF0DBBE1C1D33D700420CA0 /* FKValidatorRuleMaxLength.swift */,
+			);
+			path = Rules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +231,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADF0DBBF1C1D33D700420CA0 /* FKValidatorRuleMaxLength.swift in Sources */,
 				ADF0DB951C1D326700420CA0 /* ViewController.swift in Sources */,
+				ADF0DBB91C1D338500420CA0 /* FKValidatorRuleRequired.swift in Sources */,
+				ADF0DBBB1C1D33AB00420CA0 /* FKValidatorRuleExactLength.swift in Sources */,
 				ADF0DB931C1D326600420CA0 /* AppDelegate.swift in Sources */,
+				ADF0DBB41C1D32B100420CA0 /* FKValidator.swift in Sources */,
+				ADF0DBB71C1D336000420CA0 /* FKValidatorRule.swift in Sources */,
+				ADF0DBBD1C1D33BF00420CA0 /* FKValidatorRuleMinLength.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
