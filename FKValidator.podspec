@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FKValidator"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "FKValidator is library of validation with Swift."
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/fromkk/FKValidator.git", :tag => "1.0.1" }
+  s.source       = { :git => "https://github.com/fromkk/FKValidator.git", :tag => "1.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,10 +91,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/*", "Classes/Rules/*"
+  s.source_files  = "Classes/*.swift", "Classes/**/*.swift"
   # s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  # s.public_header_files = "Classes/*.swift", "Classes/**/*.swift"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
