@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADF0DB931C1D326600420CA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DB921C1D326600420CA0 /* AppDelegate.swift */; };
+		ADF0DB951C1D326700420CA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DB941C1D326600420CA0 /* ViewController.swift */; };
+		ADF0DB981C1D326700420CA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF0DB961C1D326700420CA0 /* Main.storyboard */; };
+		ADF0DB9A1C1D326700420CA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF0DB991C1D326700420CA0 /* Assets.xcassets */; };
+		ADF0DB9D1C1D326700420CA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF0DB9B1C1D326700420CA0 /* LaunchScreen.storyboard */; };
+		ADF0DBA81C1D326700420CA0 /* FKValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DBA71C1D326700420CA0 /* FKValidatorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADF0DBA41C1D326700420CA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADF0DB871C1D326500420CA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF0DB8E1C1D326500420CA0;
+			remoteInfo = FKValidator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADF0DB8F1C1D326600420CA0 /* FKValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FKValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF0DB921C1D326600420CA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADF0DB941C1D326600420CA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADF0DB971C1D326700420CA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADF0DB991C1D326700420CA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADF0DB9C1C1D326700420CA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADF0DB9E1C1D326700420CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF0DBA31C1D326700420CA0 /* FKValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FKValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF0DBA71C1D326700420CA0 /* FKValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FKValidatorTests.swift; sourceTree = "<group>"; };
+		ADF0DBA91C1D326700420CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADF0DB8C1C1D326500420CA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF0DBA01C1D326700420CA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADF0DB861C1D326500420CA0 = {
+			isa = PBXGroup;
+			children = (
+				ADF0DB911C1D326600420CA0 /* FKValidator */,
+				ADF0DBA61C1D326700420CA0 /* FKValidatorTests */,
+				ADF0DB901C1D326600420CA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADF0DB901C1D326600420CA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADF0DB8F1C1D326600420CA0 /* FKValidator.app */,
+				ADF0DBA31C1D326700420CA0 /* FKValidatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADF0DB911C1D326600420CA0 /* FKValidator */ = {
+			isa = PBXGroup;
+			children = (
+				ADF0DB921C1D326600420CA0 /* AppDelegate.swift */,
+				ADF0DB941C1D326600420CA0 /* ViewController.swift */,
+				ADF0DB961C1D326700420CA0 /* Main.storyboard */,
+				ADF0DB991C1D326700420CA0 /* Assets.xcassets */,
+				ADF0DB9B1C1D326700420CA0 /* LaunchScreen.storyboard */,
+				ADF0DB9E1C1D326700420CA0 /* Info.plist */,
+			);
+			path = FKValidator;
+			sourceTree = "<group>";
+		};
+		ADF0DBA61C1D326700420CA0 /* FKValidatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADF0DBA71C1D326700420CA0 /* FKValidatorTests.swift */,
+				ADF0DBA91C1D326700420CA0 /* Info.plist */,
+			);
+			path = FKValidatorTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADF0DB8E1C1D326500420CA0 /* FKValidator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF0DBAC1C1D326700420CA0 /* Build configuration list for PBXNativeTarget "FKValidator" */;
+			buildPhases = (
+				ADF0DB8B1C1D326500420CA0 /* Sources */,
+				ADF0DB8C1C1D326500420CA0 /* Frameworks */,
+				ADF0DB8D1C1D326500420CA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FKValidator;
+			productName = FKValidator;
+			productReference = ADF0DB8F1C1D326600420CA0 /* FKValidator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADF0DBA21C1D326700420CA0 /* FKValidatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF0DBAF1C1D326700420CA0 /* Build configuration list for PBXNativeTarget "FKValidatorTests" */;
+			buildPhases = (
+				ADF0DB9F1C1D326700420CA0 /* Sources */,
+				ADF0DBA01C1D326700420CA0 /* Frameworks */,
+				ADF0DBA11C1D326700420CA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADF0DBA51C1D326700420CA0 /* PBXTargetDependency */,
+			);
+			name = FKValidatorTests;
+			productName = FKValidatorTests;
+			productReference = ADF0DBA31C1D326700420CA0 /* FKValidatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADF0DB871C1D326500420CA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = fromKK;
+				TargetAttributes = {
+					ADF0DB8E1C1D326500420CA0 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					ADF0DBA21C1D326700420CA0 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = ADF0DB8E1C1D326500420CA0;
+					};
+				};
+			};
+			buildConfigurationList = ADF0DB8A1C1D326500420CA0 /* Build configuration list for PBXProject "FKValidator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADF0DB861C1D326500420CA0;
+			productRefGroup = ADF0DB901C1D326600420CA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADF0DB8E1C1D326500420CA0 /* FKValidator */,
+				ADF0DBA21C1D326700420CA0 /* FKValidatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADF0DB8D1C1D326500420CA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF0DB9D1C1D326700420CA0 /* LaunchScreen.storyboard in Resources */,
+				ADF0DB9A1C1D326700420CA0 /* Assets.xcassets in Resources */,
+				ADF0DB981C1D326700420CA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF0DBA11C1D326700420CA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADF0DB8B1C1D326500420CA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF0DB951C1D326700420CA0 /* ViewController.swift in Sources */,
+				ADF0DB931C1D326600420CA0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF0DB9F1C1D326700420CA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF0DBA81C1D326700420CA0 /* FKValidatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADF0DBA51C1D326700420CA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADF0DB8E1C1D326500420CA0 /* FKValidator */;
+			targetProxy = ADF0DBA41C1D326700420CA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADF0DB961C1D326700420CA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF0DB971C1D326700420CA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADF0DB9B1C1D326700420CA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF0DB9C1C1D326700420CA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADF0DBAA1C1D326700420CA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADF0DBAB1C1D326700420CA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADF0DBAD1C1D326700420CA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FKValidator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.FKValidator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ADF0DBAE1C1D326700420CA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FKValidator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.FKValidator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ADF0DBB01C1D326700420CA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FKValidatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.FKValidatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FKValidator.app/FKValidator";
+			};
+			name = Debug;
+		};
+		ADF0DBB11C1D326700420CA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FKValidatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.FKValidatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FKValidator.app/FKValidator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADF0DB8A1C1D326500420CA0 /* Build configuration list for PBXProject "FKValidator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF0DBAA1C1D326700420CA0 /* Debug */,
+				ADF0DBAB1C1D326700420CA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF0DBAC1C1D326700420CA0 /* Build configuration list for PBXNativeTarget "FKValidator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF0DBAD1C1D326700420CA0 /* Debug */,
+				ADF0DBAE1C1D326700420CA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADF0DBAF1C1D326700420CA0 /* Build configuration list for PBXNativeTarget "FKValidatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF0DBB01C1D326700420CA0 /* Debug */,
+				ADF0DBB11C1D326700420CA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADF0DB871C1D326500420CA0 /* Project object */;
+}
