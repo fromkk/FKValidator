@@ -18,6 +18,9 @@ enum FKValidatorErrorCode :Int
     case MinNumber
     case MaxNumber
     case BetweenNumber
+    case Numeric
+    case Alphabet
+    case Alnum
     case PostalCode
     case Telephone
     case Email

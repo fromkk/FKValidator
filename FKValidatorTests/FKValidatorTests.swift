@@ -30,7 +30,7 @@ class FKValidatorTests: XCTestCase {
     
     func testValidatorExactLength()
     {
-        let validator :FKValidator = FKValidator().addRule(FKValidatorRuleRequired()).addRule(FKValidatorRuleExactLength(length: 5))
+        let validator :FKValidator = FKValidator().addRule(FKValidatorRuleRequired()).addRule(FKValidatorRuleExactLength(length: 5, errorMessage: "value is not 5 length."))
         XCTAssertFalse(validator.run(""))
         XCTAssertEqual(validator.errors.first?.code, FKValidatorErrorCode.Required.rawValue)
         
@@ -39,6 +39,7 @@ class FKValidatorTests: XCTestCase {
         XCTAssertTrue(validator.run("abcde"))
         XCTAssertFalse(validator.run("abcdef"))
         XCTAssertEqual(validator.errors.first?.code, FKValidatorErrorCode.ExactLength.rawValue)
+        XCTAssertEqual(validator.errors.first?.localizedDescription, "value is not 5 length.")
     }
     
     func testValidatorMinLength()
@@ -143,5 +144,31 @@ class FKValidatorTests: XCTestCase {
         
         XCTAssertFalse(validator.run("012-3456-7890-1234"))
         XCTAssertEqual(validator.errors.first?.code, FKValidatorErrorCode.Telephone.rawValue)
+    }
+    
+    func testNumeric()
+    {
+        let validator :FKValidator = FKValidator().addRule(FKValidatorRuleRequired()).addRule(FKValidatorRuleNumeric())
+        XCTAssert(validator.run("-1234567890.123456789"))
+        XCTAssert(validator.run("+1234567890.123456789"))
+        XCTAssert(validator.run("1234567890"))
+        XCTAssertFalse(validator.run("abcdef"))
+        XCTAssertEqual(validator.errors.first?.code, FKValidatorErrorCode.Numeric.rawValue)
+    }
+    
+    func testAlphabet()
+    {
+        let validator :FKValidator = FKValidator().addRule(FKValidatorRuleRequired()).addRule(FKValidatorRuleAlphabet())
+        XCTAssert(validator.run("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"))
+        XCTAssertFalse(validator.run("012345679"))
+        XCTAssertEqual(validator.errors.first?.code, FKValidatorErrorCode.Alphabet.rawValue)
+    }
+    
+    func testAlnum()
+    {
+        let validator :FKValidator = FKValidator().addRule(FKValidatorRuleRequired()).addRule(FKValidatorRuleAlnum())
+        XCTAssert(validator.run("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"))
+        XCTAssertFalse(validator.run("!\"#$%&'()0=~|`{+*}<>?_'"))
+        XCTAssertEqual(validator.errors.first?.code, FKValidatorErrorCode.Alnum.rawValue)
     }
 }
