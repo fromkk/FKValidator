@@ -33,5 +33,5 @@ validator.errors // Array <NSError>
 ```swift
 validator.addRule(FKValidatorRuleExactLength(length: 5, "value is not 5 length."))
 validator.run("1234")
-validator.errors // Array <NSError NSLocalizedDescription: "value is not 5 length." >
+validator.errors // Array <NSError NSLocalizedDescriptionKey: "value is not 5 length." >
 ```
