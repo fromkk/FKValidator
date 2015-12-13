@@ -28,6 +28,6 @@ class FKValidatorRuleRequired :FKValidatorRule
     
     override func run(value :String) -> Bool
     {
-        return 0 != value.characters.count
+        return !super.run(value)
     }
 }

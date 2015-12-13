@@ -8,15 +8,6 @@
 
 import Foundation
 
-enum FKValidatorErrorCode :Int
-{
-    case Empty
-    case Required
-    case ExactLength
-    case MinLength
-    case MaxLength
-}
-
 class FKValidator :NSObject
 {
     var rules: Array <FKValidatorRule> = []

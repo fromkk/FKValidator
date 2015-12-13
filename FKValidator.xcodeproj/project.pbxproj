@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD3E46651C1D3E02000EC075 /* FKValidatorRuleMatchPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3E46641C1D3E02000EC075 /* FKValidatorRuleMatchPattern.swift */; };
+		AD3E46671C1D4084000EC075 /* FKValidatorRuleMatchValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3E46661C1D4084000EC075 /* FKValidatorRuleMatchValue.swift */; };
+		AD3E46691C1D460C000EC075 /* FKValidatorRulePostalCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3E46681C1D460C000EC075 /* FKValidatorRulePostalCode.swift */; };
+		AD3E466B1C1D46E1000EC075 /* FKValidatorRuleEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3E466A1C1D46E1000EC075 /* FKValidatorRuleEmail.swift */; };
+		AD3E466D1C1D48F5000EC075 /* FKValidatorRuleURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3E466C1C1D48F5000EC075 /* FKValidatorRuleURL.swift */; };
+		AD3E466F1C1D497A000EC075 /* FKValidatorRuleTelephone.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3E466E1C1D497A000EC075 /* FKValidatorRuleTelephone.swift */; };
+		ADBC8A6C1C1D384A00B3C81D /* FKValidatorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC8A6B1C1D384A00B3C81D /* FKValidatorConfig.swift */; };
+		ADBC8A6E1C1D392000B3C81D /* FKValidatorRuleMinNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC8A6D1C1D392000B3C81D /* FKValidatorRuleMinNumber.swift */; };
+		ADBC8A701C1D3B5000B3C81D /* FKValidatorRuleMaxNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC8A6F1C1D3B5000B3C81D /* FKValidatorRuleMaxNumber.swift */; };
+		ADBC8A721C1D3C6200B3C81D /* FKValidatorRuleBetweenNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC8A711C1D3C6200B3C81D /* FKValidatorRuleBetweenNumber.swift */; };
 		ADF0DB931C1D326600420CA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DB921C1D326600420CA0 /* AppDelegate.swift */; };
 		ADF0DB951C1D326700420CA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0DB941C1D326600420CA0 /* ViewController.swift */; };
 		ADF0DB981C1D326700420CA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF0DB961C1D326700420CA0 /* Main.storyboard */; };
@@ -32,6 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD3E46641C1D3E02000EC075 /* FKValidatorRuleMatchPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKValidatorRuleMatchPattern.swift; sourceTree = "<group>"; };
+		AD3E46661C1D4084000EC075 /* FKValidatorRuleMatchValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKValidatorRuleMatchValue.swift; sourceTree = "<group>"; };
+		AD3E46681C1D460C000EC075 /* FKValidatorRulePostalCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKValidatorRulePostalCode.swift; sourceTree = "<group>"; };
+		AD3E466A1C1D46E1000EC075 /* FKValidatorRuleEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKValidatorRuleEmail.swift; sourceTree = "<group>"; };
+		AD3E466C1C1D48F5000EC075 /* FKValidatorRuleURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKValidatorRuleURL.swift; sourceTree = "<group>"; };
+		AD3E466E1C1D497A000EC075 /* FKValidatorRuleTelephone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKValidatorRuleTelephone.swift; sourceTree = "<group>"; };
+		ADBC8A6B1C1D384A00B3C81D /* FKValidatorConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKValidatorConfig.swift; sourceTree = "<group>"; };
+		ADBC8A6D1C1D392000B3C81D /* FKValidatorRuleMinNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKValidatorRuleMinNumber.swift; sourceTree = "<group>"; };
+		ADBC8A6F1C1D3B5000B3C81D /* FKValidatorRuleMaxNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKValidatorRuleMaxNumber.swift; sourceTree = "<group>"; };
+		ADBC8A711C1D3C6200B3C81D /* FKValidatorRuleBetweenNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKValidatorRuleBetweenNumber.swift; sourceTree = "<group>"; };
 		ADF0DB8F1C1D326600420CA0 /* FKValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FKValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF0DB921C1D326600420CA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADF0DB941C1D326600420CA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +134,7 @@
 			children = (
 				ADF0DBB51C1D332F00420CA0 /* Rules */,
 				ADF0DBB31C1D32B100420CA0 /* FKValidator.swift */,
+				ADBC8A6B1C1D384A00B3C81D /* FKValidatorConfig.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -126,6 +147,15 @@
 				ADF0DBBA1C1D33AB00420CA0 /* FKValidatorRuleExactLength.swift */,
 				ADF0DBBC1C1D33BF00420CA0 /* FKValidatorRuleMinLength.swift */,
 				ADF0DBBE1C1D33D700420CA0 /* FKValidatorRuleMaxLength.swift */,
+				ADBC8A6D1C1D392000B3C81D /* FKValidatorRuleMinNumber.swift */,
+				ADBC8A6F1C1D3B5000B3C81D /* FKValidatorRuleMaxNumber.swift */,
+				ADBC8A711C1D3C6200B3C81D /* FKValidatorRuleBetweenNumber.swift */,
+				AD3E46641C1D3E02000EC075 /* FKValidatorRuleMatchPattern.swift */,
+				AD3E46661C1D4084000EC075 /* FKValidatorRuleMatchValue.swift */,
+				AD3E46681C1D460C000EC075 /* FKValidatorRulePostalCode.swift */,
+				AD3E466A1C1D46E1000EC075 /* FKValidatorRuleEmail.swift */,
+				AD3E466C1C1D48F5000EC075 /* FKValidatorRuleURL.swift */,
+				AD3E466E1C1D497A000EC075 /* FKValidatorRuleTelephone.swift */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
@@ -232,11 +262,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADF0DBBF1C1D33D700420CA0 /* FKValidatorRuleMaxLength.swift in Sources */,
+				ADBC8A6E1C1D392000B3C81D /* FKValidatorRuleMinNumber.swift in Sources */,
 				ADF0DB951C1D326700420CA0 /* ViewController.swift in Sources */,
+				AD3E46651C1D3E02000EC075 /* FKValidatorRuleMatchPattern.swift in Sources */,
+				ADBC8A721C1D3C6200B3C81D /* FKValidatorRuleBetweenNumber.swift in Sources */,
+				ADBC8A701C1D3B5000B3C81D /* FKValidatorRuleMaxNumber.swift in Sources */,
+				AD3E466F1C1D497A000EC075 /* FKValidatorRuleTelephone.swift in Sources */,
+				AD3E46691C1D460C000EC075 /* FKValidatorRulePostalCode.swift in Sources */,
 				ADF0DBB91C1D338500420CA0 /* FKValidatorRuleRequired.swift in Sources */,
 				ADF0DBBB1C1D33AB00420CA0 /* FKValidatorRuleExactLength.swift in Sources */,
+				ADBC8A6C1C1D384A00B3C81D /* FKValidatorConfig.swift in Sources */,
+				AD3E466D1C1D48F5000EC075 /* FKValidatorRuleURL.swift in Sources */,
 				ADF0DB931C1D326600420CA0 /* AppDelegate.swift in Sources */,
 				ADF0DBB41C1D32B100420CA0 /* FKValidator.swift in Sources */,
+				AD3E466B1C1D46E1000EC075 /* FKValidatorRuleEmail.swift in Sources */,
+				AD3E46671C1D4084000EC075 /* FKValidatorRuleMatchValue.swift in Sources */,
 				ADF0DBB71C1D336000420CA0 /* FKValidatorRule.swift in Sources */,
 				ADF0DBBD1C1D33BF00420CA0 /* FKValidatorRuleMinLength.swift in Sources */,
 			);
@@ -428,6 +468,7 @@
 				ADF0DBAE1C1D326700420CA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADF0DBAF1C1D326700420CA0 /* Build configuration list for PBXNativeTarget "FKValidatorTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +477,7 @@
 				ADF0DBB11C1D326700420CA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

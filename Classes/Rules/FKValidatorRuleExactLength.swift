@@ -31,6 +31,11 @@ class FKValidatorRuleExactLength :FKValidatorRule
     }
     
     override func run(value: String) -> Bool {
+        if (super.run(value))
+        {
+            return true
+        }
+        
         return self.length == value.characters.count
     }
 }
