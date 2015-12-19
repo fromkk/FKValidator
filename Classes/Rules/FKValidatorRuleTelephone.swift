@@ -8,21 +8,21 @@
 
 import Foundation
 
-class FKValidatorRuleTelephone :FKValidatorRuleMatchPattern
+public class FKValidatorRuleTelephone :FKValidatorRuleMatchPattern
 {
     let _pattern :String = "^[0-9]+\\-[0-9]+\\-[0-9]+$"
     
-    init()
+    public init()
     {
         super.init(pattern: self._pattern)
     }
     
-    init(errorMessage :String)
+    public init(errorMessage :String)
     {
         super.init(pattern: self._pattern, errorMessage: errorMessage)
     }
     
-    override func _commonInit() {
+    public override func _commonInit() {
         self.errorCode = FKValidatorErrorCode.Telephone
     }
 }

@@ -8,16 +8,16 @@
 
 import Foundation
 
-class FKValidatorRulePostalCode :FKValidatorRuleMatchPattern
+public class FKValidatorRulePostalCode :FKValidatorRuleMatchPattern
 {
     let _pattern :String = "^[0-9]{3}\\-[0-9]{4}$"
     
-    init()
+    public init()
     {
         super.init(pattern: self._pattern)
     }
     
-    init(errorMessage: String)
+    public init(errorMessage: String)
     {
         super.init(pattern: self._pattern, errorMessage: errorMessage)
     }

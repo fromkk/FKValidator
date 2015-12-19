@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum FKValidatorErrorCode :Int
+public enum FKValidatorErrorCode :Int
 {
     case Empty
     case Required

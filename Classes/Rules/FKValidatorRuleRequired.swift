@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FKValidatorRuleRequired :FKValidatorRule
+public class FKValidatorRuleRequired :FKValidatorRule
 {
     override init()
     {
@@ -26,7 +26,7 @@ class FKValidatorRuleRequired :FKValidatorRule
         self.errorCode = .Required
     }
     
-    override func run(value :String) -> Bool
+    public override func run(value :String) -> Bool
     {
         return !super.run(value)
     }

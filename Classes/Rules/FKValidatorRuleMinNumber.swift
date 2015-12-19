@@ -8,18 +8,18 @@
 
 import Foundation
 
-class FKValidatorRuleMinNumber :FKValidatorRule
+public class FKValidatorRuleMinNumber :FKValidatorRule
 {
     var number :Float = 0.0
     
-    init(number :Float)
+    public init(number :Float)
     {
         super.init()
         
         self.number = number
     }
     
-    init(number: Float, errorMessage: String) {
+    public init(number: Float, errorMessage: String) {
         super.init(errorMessage: errorMessage)
         
         self.number = number
@@ -29,7 +29,7 @@ class FKValidatorRuleMinNumber :FKValidatorRule
         self.errorCode = .MinNumber
     }
     
-    override func run(value: String) -> Bool {
+    public override func run(value: String) -> Bool {
         if (super.run(value))
         {
             return true

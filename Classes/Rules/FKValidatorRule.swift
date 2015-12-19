@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FKValidatorRule :NSObject
+public class FKValidatorRule :NSObject
 {
     var errorCode :FKValidatorErrorCode = .Empty
     var errorMessage :String = ""
@@ -20,14 +20,14 @@ class FKValidatorRule :NSObject
         }
     }
     
-    override init()
+    public override init()
     {
         super.init()
         
         self._commonInit()
     }
     
-    init(errorMessage :String)
+    public init(errorMessage :String)
     {
         super.init()
         
@@ -40,7 +40,7 @@ class FKValidatorRule :NSObject
         
     }
     
-    func run(value :String) -> Bool
+    public func run(value :String) -> Bool
     {
         return 0 == value.characters.count
     }

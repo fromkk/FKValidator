@@ -8,16 +8,16 @@
 
 import Foundation
 
-class FKValidatorRuleAlphabet :FKValidatorRuleMatchPattern
+public class FKValidatorRuleAlphabet :FKValidatorRuleMatchPattern
 {
     let _pattern :String = "^[a-zA-Z]+$"
     
-    init()
+    public init()
     {
         super.init(pattern: self._pattern)
     }
     
-    init(errorMessage: String)
+    public init(errorMessage: String)
     {
         super.init(pattern: self._pattern, errorMessage: errorMessage)
     }

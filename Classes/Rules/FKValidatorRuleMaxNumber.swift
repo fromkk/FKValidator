@@ -8,18 +8,18 @@
 
 import Foundation
 
-class FKValidatorRuleMaxNumber :FKValidatorRule
+public class FKValidatorRuleMaxNumber :FKValidatorRule
 {
     var number :Float = 0.0
     
-    init(number :Float)
+    public init(number :Float)
     {
         super.init()
         
         self.number = number
     }
     
-    init(number :Float, errorMessage :String)
+    public init(number :Float, errorMessage :String)
     {
         super.init(errorMessage: errorMessage)
         
@@ -30,7 +30,7 @@ class FKValidatorRuleMaxNumber :FKValidatorRule
         self.errorCode = .MaxNumber
     }
     
-    override func run(value: String) -> Bool {
+    public override func run(value: String) -> Bool {
         if (super.run(value))
         {
             return true

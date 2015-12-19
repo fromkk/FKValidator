@@ -8,19 +8,19 @@
 
 import Foundation
 
-class FKValidatorRuleBetweenNumber :FKValidatorRule
+public class FKValidatorRuleBetweenNumber :FKValidatorRule
 {
     var minNumber :Float = 0.0
     var maxNumber :Float = 0.0
     
-    init(minNumber :Float, maxNumber :Float) {
+    public init(minNumber :Float, maxNumber :Float) {
         super.init()
         
         self.minNumber = minNumber
         self.maxNumber = maxNumber
     }
     
-    init(minNumber :Float, maxNumber :Float, errorMessage :String) {
+    public init(minNumber :Float, maxNumber :Float, errorMessage :String) {
         super.init(errorMessage: errorMessage)
         
         self.minNumber = minNumber
@@ -31,7 +31,7 @@ class FKValidatorRuleBetweenNumber :FKValidatorRule
         self.errorCode = .BetweenNumber
     }
     
-    override func run(value: String) -> Bool {
+    public override func run(value: String) -> Bool {
         if (super.run(value))
         {
             return true

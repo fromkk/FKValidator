@@ -8,18 +8,18 @@
 
 import Foundation
 
-class FKValidator :NSObject
+public class FKValidator :NSObject
 {
     var rules: Array <FKValidatorRule> = []
     var errors :Array <NSError> = []
     
-    func addRule(rule :FKValidatorRule) -> Self
+    public func addRule(rule :FKValidatorRule) -> Self
     {
         self.rules.append(rule)
         return self
     }
     
-    func addRules(rules :Array<FKValidatorRule>) -> Self
+    public func addRules(rules :Array<FKValidatorRule>) -> Self
     {
         for rule in rules
         {
@@ -29,7 +29,7 @@ class FKValidator :NSObject
         return self
     }
     
-    func run(value :String) -> Bool
+    public func run(value :String) -> Bool
     {
         var result :Bool = true
         self.errors = []

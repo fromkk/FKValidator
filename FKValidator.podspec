@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FKValidator"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "FKValidator is library of validation with Swift."
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/fromkk/FKValidator.git", :tag => "1.0.2" }
+  s.source       = { :git => "https://github.com/fromkk/FKValidator.git", :tag => "1.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

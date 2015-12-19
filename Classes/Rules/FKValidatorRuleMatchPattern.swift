@@ -8,18 +8,18 @@
 
 import Foundation
 
-class FKValidatorRuleMatchPattern :FKValidatorRule
+public class FKValidatorRuleMatchPattern :FKValidatorRule
 {
     var pattern :String = ""
     
-    init(pattern :String)
+    public init(pattern :String)
     {
         super.init()
         
         self.pattern = pattern
     }
     
-    init(pattern :String, errorMessage :String)
+    public init(pattern :String, errorMessage :String)
     {
         super.init(errorMessage: errorMessage)
         
@@ -30,7 +30,7 @@ class FKValidatorRuleMatchPattern :FKValidatorRule
         self.errorCode = .MatchPattern
     }
     
-    override func run(value: String) -> Bool {
+    public override func run(value: String) -> Bool {
         if (super.run(value))
         {
             return true
