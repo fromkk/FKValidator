@@ -10,12 +10,12 @@ import Foundation
 
 public class FKValidatorRuleRequired :FKValidatorRule
 {
-    override init()
+    public override init()
     {
         super.init()
     }
     
-    override init(errorMessage: String) {
+    public override init(errorMessage: String) {
         super.init()
         self.errorMessage = errorMessage
     }
