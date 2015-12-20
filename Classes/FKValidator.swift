@@ -10,8 +10,8 @@ import Foundation
 
 public class FKValidator :NSObject
 {
-    var rules: Array <FKValidatorRule> = []
-    var errors :Array <NSError> = []
+    public var rules: Array <FKValidatorRule> = []
+    public var errors :Array <NSError> = []
     
     public func addRule(rule :FKValidatorRule) -> Self
     {
