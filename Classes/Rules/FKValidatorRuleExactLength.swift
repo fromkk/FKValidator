@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class FKValidatorRuleExactLength :FKValidatorRule
+open class FKValidatorRuleExactLength :FKValidatorRule
 {
     var length :Int = 0
     
@@ -27,10 +27,10 @@ public class FKValidatorRuleExactLength :FKValidatorRule
     }
     
     override func _commonInit() {
-        self.errorCode = .ExactLength
+        self.errorCode = .exactLength
     }
     
-    public override func run(value: String) -> Bool {
+    open override func run(_ value: String) -> Bool {
         if (super.run(value))
         {
             return true

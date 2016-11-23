@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class FKValidatorRuleMinLength :FKValidatorRule
+open class FKValidatorRuleMinLength :FKValidatorRule
 {
     var length :Int = 0
     
@@ -24,10 +24,10 @@ public class FKValidatorRuleMinLength :FKValidatorRule
     }
     
     override func _commonInit() {
-        self.errorCode = .MinLength
+        self.errorCode = .minLength
     }
     
-    public override func run(value: String) -> Bool {
+    open override func run(_ value: String) -> Bool {
         if (super.run(value))
         {
             return true

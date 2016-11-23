@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class FKValidatorRuleAlphabet :FKValidatorRuleMatchPattern
+open class FKValidatorRuleAlphabet :FKValidatorRuleMatchPattern
 {
     let _pattern :String = "^[a-zA-Z]+$"
     
@@ -23,6 +23,6 @@ public class FKValidatorRuleAlphabet :FKValidatorRuleMatchPattern
     }
     
     override func _commonInit() {
-        self.errorCode = FKValidatorErrorCode.Alphabet
+        self.errorCode = FKValidatorErrorCode.alphabet
     }
 }

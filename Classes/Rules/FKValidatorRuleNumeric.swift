@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class FKValidatorRuleNumeric :FKValidatorRuleMatchPattern
+open class FKValidatorRuleNumeric :FKValidatorRuleMatchPattern
 {
     let _pattern :String = "^[\\-\\+]?[0-9\\.]+$"
     
@@ -23,6 +23,6 @@ public class FKValidatorRuleNumeric :FKValidatorRuleMatchPattern
     }
     
     override func _commonInit() {
-        self.errorCode = FKValidatorErrorCode.Numeric
+        self.errorCode = FKValidatorErrorCode.numeric
     }
 }

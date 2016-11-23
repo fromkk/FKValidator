@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class FKValidatorRuleAlnum :FKValidatorRuleMatchPattern
+open class FKValidatorRuleAlnum :FKValidatorRuleMatchPattern
 {
     let _pattern :String = "^[0-9a-zA-Z]+$"
     
@@ -22,6 +22,6 @@ public class FKValidatorRuleAlnum :FKValidatorRuleMatchPattern
     }
     
     override func _commonInit() {
-        self.errorCode = FKValidatorErrorCode.Alnum
+        self.errorCode = FKValidatorErrorCode.alnum
     }
 }

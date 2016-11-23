@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class FKValidatorRulePostalCode :FKValidatorRuleMatchPattern
+open class FKValidatorRulePostalCode :FKValidatorRuleMatchPattern
 {
     let _pattern :String = "^[0-9]{3}\\-[0-9]{4}$"
     
@@ -24,6 +24,6 @@ public class FKValidatorRulePostalCode :FKValidatorRuleMatchPattern
     
     override func _commonInit()
     {
-        self.errorCode = FKValidatorErrorCode.PostalCode
+        self.errorCode = FKValidatorErrorCode.postalCode
     }
 }

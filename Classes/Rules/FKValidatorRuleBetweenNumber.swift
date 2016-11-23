@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class FKValidatorRuleBetweenNumber :FKValidatorRule
+open class FKValidatorRuleBetweenNumber :FKValidatorRule
 {
     var minNumber :Float = 0.0
     var maxNumber :Float = 0.0
@@ -28,10 +28,10 @@ public class FKValidatorRuleBetweenNumber :FKValidatorRule
     }
     
     override func _commonInit() {
-        self.errorCode = .BetweenNumber
+        self.errorCode = .betweenNumber
     }
     
-    public override func run(value: String) -> Bool {
+    open override func run(_ value: String) -> Bool {
         if (super.run(value))
         {
             return true

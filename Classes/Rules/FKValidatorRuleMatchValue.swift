@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class FKValidatorRuleMatchValue :FKValidatorRule
+open class FKValidatorRuleMatchValue :FKValidatorRule
 {
     var value :String = ""
     
@@ -28,10 +28,10 @@ public class FKValidatorRuleMatchValue :FKValidatorRule
     
     override func _commonInit()
     {
-        self.errorCode = .MatchValue
+        self.errorCode = .matchValue
     }
     
-    public override func run(value: String) -> Bool
+    open override func run(_ value: String) -> Bool
     {
         if (super.run(value))
         {

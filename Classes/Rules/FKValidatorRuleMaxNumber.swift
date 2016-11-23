@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class FKValidatorRuleMaxNumber :FKValidatorRule
+open class FKValidatorRuleMaxNumber :FKValidatorRule
 {
     var number :Float = 0.0
     
@@ -27,10 +27,10 @@ public class FKValidatorRuleMaxNumber :FKValidatorRule
     }
     
     override func _commonInit() {
-        self.errorCode = .MaxNumber
+        self.errorCode = .maxNumber
     }
     
-    public override func run(value: String) -> Bool {
+    open override func run(_ value: String) -> Bool {
         if (super.run(value))
         {
             return true
