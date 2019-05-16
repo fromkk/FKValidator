@@ -37,6 +37,6 @@ open class FKValidatorRuleMatchPattern :FKValidatorRule
         }
         
         let regexp :NSRegularExpression = try! NSRegularExpression(pattern: self.pattern, options: [.caseInsensitive, .dotMatchesLineSeparators] )
-        return regexp.matches(in: value, options: [], range: NSMakeRange(0, value.characters.count)).count > 0
+        return regexp.matches(in: value, options: [], range: NSMakeRange(0, value.count)).count > 0
     }
 }
