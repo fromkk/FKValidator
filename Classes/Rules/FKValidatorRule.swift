@@ -42,6 +42,6 @@ open class FKValidatorRule :NSObject
     
     open func run(_ value :String) -> Bool
     {
-        return 0 == value.characters.count
+        return 0 == value.count
     }
 }

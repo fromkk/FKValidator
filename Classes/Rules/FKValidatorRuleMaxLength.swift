@@ -33,6 +33,6 @@ open class FKValidatorRuleMaxLength :FKValidatorRule
             return true
         }
         
-        return self.length >= value.characters.count
+        return self.length >= value.count
     }
 }
